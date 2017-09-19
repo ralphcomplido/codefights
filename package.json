@@ -1,0 +1,16 @@
+{
+  "name": "codefights",
+  "version": "1.0.0",
+  "description": "CodeFights Interview Practice Solutions",
+  "scripts": {
+    "start": "npm test",
+    "test": "jest",
+    "watch-test": "npm test -- --watchAll --verbose"
+  },
+  "author": "Wes Okuhara",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^21.0.2"
+  }
+}
