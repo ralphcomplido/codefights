@@ -38,9 +38,7 @@ Guaranteed constraints:
 true if there are two elements from a and b which add up to v, and false otherwise.
 */
 
-const {
-  sumOfTwo
-} = require('./sumOfTwo');
+const { sumOfTwo } = require('./sumOfTwo');
 
 describe('sumOfTwo()', () => {
   it('should have a pair that sums to the target', () => {

@@ -56,38 +56,44 @@ Guaranteed constraints:
 The array containing the grouped dishes.
 */
 
-const {
-  groupingDishes
-} = require('./groupingDishes');
+const { groupingDishes } = require('./groupingDishes');
 
 describe('groupingDishes()', () => {
   it('should group the dishes', () => {
-    const dishes = [['Salad', 'Tomato', 'Cucumber', 'Salad', 'Sauce'],
+    const dishes = [
+      ['Salad', 'Tomato', 'Cucumber', 'Salad', 'Sauce'],
       ['Pizza', 'Tomato', 'Sausage', 'Sauce', 'Dough'],
       ['Quesadilla', 'Chicken', 'Cheese', 'Sauce'],
-      ['Sandwich', 'Salad', 'Bread', 'Tomato', 'Cheese']];
+      ['Sandwich', 'Salad', 'Bread', 'Tomato', 'Cheese']
+    ];
 
-    const expected =  [['Cheese', 'Quesadilla', 'Sandwich'],
+    const expected = [
+      ['Cheese', 'Quesadilla', 'Sandwich'],
       ['Salad', 'Salad', 'Sandwich'],
       ['Sauce', 'Pizza', 'Quesadilla', 'Salad'],
-      ['Tomato', 'Pizza', 'Salad', 'Sandwich']];
+      ['Tomato', 'Pizza', 'Salad', 'Sandwich']
+    ];
 
     const result = groupingDishes(dishes);
     expect(result).toEqual(expected);
   });
 
   it('should group the dishes', () => {
-    const dishes = [['Pasta', 'Tomato Sauce', 'Onions', 'Garlic'],
+    const dishes = [
+      ['Pasta', 'Tomato Sauce', 'Onions', 'Garlic'],
       ['Chicken Curry', 'Chicken', 'Curry Sauce'],
       ['Fried Rice', 'Rice', 'Onions', 'Nuts'],
       ['Salad', 'Spinach', 'Nuts'],
       ['Sandwich', 'Cheese', 'Bread'],
-      ['Quesadilla', 'Chicken', 'Cheese']];
+      ['Quesadilla', 'Chicken', 'Cheese']
+    ];
 
-    const expected =  [['Cheese', 'Quesadilla', 'Sandwich'],
+    const expected = [
+      ['Cheese', 'Quesadilla', 'Sandwich'],
       ['Chicken', 'Chicken Curry', 'Quesadilla'],
       ['Nuts', 'Fried Rice', 'Salad'],
-      ['Onions', 'Fried Rice', 'Pasta']];
+      ['Onions', 'Fried Rice', 'Pasta']
+    ];
 
     const result = groupingDishes(dishes);
     expect(result).toEqual(expected);

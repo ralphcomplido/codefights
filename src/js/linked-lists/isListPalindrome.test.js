@@ -28,10 +28,7 @@ Guaranteed constraints:
 Return true if l is a palindrome, otherwise return false.
 */
 
-const {
-  ListNode,
-  isListPalindrome
-} = require('./isListPalindrome');
+const { ListNode, isListPalindrome } = require('./isListPalindrome');
 
 describe('isListPalindrome()', () => {
   it('should be a palindrome linked list', () => {

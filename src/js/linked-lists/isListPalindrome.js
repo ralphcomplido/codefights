@@ -1,7 +1,7 @@
 function ListNode(x) {
   this.value = x;
   this.next = null;
-};
+}
 
 function isListPalindrome(l) {
   // empty list or list of length 1
@@ -35,7 +35,7 @@ function isListPalindrome(l) {
   }
 
   return true;
-};
+}
 
 module.exports = {
   ListNode,

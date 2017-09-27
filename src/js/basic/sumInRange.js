@@ -11,7 +11,7 @@ function sumInRange(nums, queries) {
   for (let i = 0; i < queries.length; i++) {
     let lower = queries[i][0];
     let upper = queries[i][1];
-    sum += (sums[upper + 1] - sums[lower]);
+    sum += sums[upper + 1] - sums[lower];
     sum %= modulo;
   }
 

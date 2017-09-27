@@ -27,9 +27,7 @@ Guaranteed constraints:
 [output] boolean
 */
 
-const {
-  containsDuplicates
-} = require('./containsDuplicates');
+const { containsDuplicates } = require('./containsDuplicates');
 
 describe('containsDuplicates()', () => {
   it('should not contain duplicates', () => {

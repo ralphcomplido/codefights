@@ -35,10 +35,7 @@ Guaranteed constraints:
 Return l with all the values equal to k removed.
 */
 
-const {
-  ListNode,
-  removeKFromList
-} = require('./removeKFromList');
+const { ListNode, removeKFromList } = require('./removeKFromList');
 
 describe('removeKFromList()', () => {
   it('should remove all the target elements', () => {

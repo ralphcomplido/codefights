@@ -35,9 +35,7 @@ The element in a that occurs in the array more than once and has the minimal
 index for its second occurrence. If there are no such elements, return -1.
 */
 
-const {
-  firstDuplicate
-} = require('./firstDuplicate');
+const { firstDuplicate } = require('./firstDuplicate');
 
 describe('firstDuplicate()', () => {
   it('should find the first duplicate', () => {

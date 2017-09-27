@@ -35,9 +35,7 @@ patterns.length = strings.length,
 Return true if strings follows patterns and false otherwise.
 */
 
-const {
-  areFollowingPatterns
-} = require('./areFollowingPatterns');
+const { areFollowingPatterns } = require('./areFollowingPatterns');
 
 describe('areFollowingPatterns()', () => {
   it('should match sequences', () => {

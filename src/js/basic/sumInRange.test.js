@@ -39,9 +39,7 @@ An integer that is the sum of all of the sums gotten from querying nums,
 taken modulo 109 + 7.
 */
 
-const {
-  sumInRange
-} = require('./sumInRange');
+const { sumInRange } = require('./sumInRange');
 
 describe('sumInRange()', () => {
   it('should compute the sum of the ranges', () => {

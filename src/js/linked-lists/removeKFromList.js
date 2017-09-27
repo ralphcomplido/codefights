@@ -1,7 +1,7 @@
 function ListNode(x) {
   this.value = x;
   this.next = null;
-};
+}
 
 function removeKFromList(l, k) {
   let dummy = new ListNode();
@@ -17,7 +17,7 @@ function removeKFromList(l, k) {
   }
 
   return dummy.next;
-};
+}
 
 module.exports = {
   ListNode,

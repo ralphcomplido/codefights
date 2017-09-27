@@ -31,18 +31,12 @@ a[i].length = a.length,
 [output] array.array.integer
 */
 
-const {
-  rotateImage
-} = require('./rotateImage');
+const { rotateImage } = require('./rotateImage');
 
 describe('rotateImage()', () => {
   it('should rotate the matrix 90 degrees clockwise', () => {
-    const a = [[1, 2, 3],
-               [4, 5, 6],
-               [7, 8, 9]];
-    const expected = [[7, 4, 1],
-                      [8, 5, 2],
-                      [9, 6, 3]];
+    const a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+    const expected = [[7, 4, 1], [8, 5, 2], [9, 6, 3]];
 
     const result = rotateImage(a);
     expect(result).toEqual(expected);
@@ -57,16 +51,20 @@ describe('rotateImage()', () => {
   });
 
   it('should rotate the matrix 90 degrees clockwise', () => {
-    const a = [[10, 9, 6, 3, 7],
-               [6, 10, 2, 9, 7],
-               [7, 6, 3, 8, 2],
-               [8, 9, 7, 9, 9],
-               [6, 8, 6, 8, 2]];
-    const expected = [[6, 8, 7, 6, 10],
-                      [8, 9, 6, 10, 9],
-                      [6, 7, 3, 2, 6],
-                      [8, 9, 8, 9, 3],
-                      [2, 9, 2, 7, 7]];
+    const a = [
+      [10, 9, 6, 3, 7],
+      [6, 10, 2, 9, 7],
+      [7, 6, 3, 8, 2],
+      [8, 9, 7, 9, 9],
+      [6, 8, 6, 8, 2]
+    ];
+    const expected = [
+      [6, 8, 7, 6, 10],
+      [8, 9, 6, 10, 9],
+      [6, 7, 3, 2, 6],
+      [8, 9, 8, 9, 3],
+      [2, 9, 2, 7, 7]
+    ];
 
     const result = rotateImage(a);
     expect(result).toEqual(expected);

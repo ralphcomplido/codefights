@@ -35,9 +35,7 @@ The first non-repeating character in s, or '_' if there are no characters
 that do not repeat.
 */
 
-const {
-  firstNotRepeatingCharacter
-} = require('./firstNotRepeatingCharacter');
+const { firstNotRepeatingCharacter } = require('./firstNotRepeatingCharacter');
 
 describe('firstNotRepeatingCharacter()', () => {
   it('should find the first character that does not repeat', () => {

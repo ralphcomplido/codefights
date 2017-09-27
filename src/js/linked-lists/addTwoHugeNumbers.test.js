@@ -41,10 +41,7 @@ The result of adding a and b together, returned without leading zeros in the
 same format.
 */
 
-const {
-  ListNode,
-  addTwoHugeNumbers
-} = require('./addTwoHugeNumbers');
+const { ListNode, addTwoHugeNumbers } = require('./addTwoHugeNumbers');
 
 describe('addTwoHugeNumbers()', () => {
   it('should add two huge numbers', () => {

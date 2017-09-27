@@ -36,10 +36,7 @@ Guaranteed constraints:
 A list that contains elements from both l1 and l2, sorted in non-decreasing order.
 */
 
-const {
-  ListNode,
-  mergeTwoLinkedLists
-} = require('./mergeTwoLinkedLists');
+const { ListNode, mergeTwoLinkedLists } = require('./mergeTwoLinkedLists');
 
 describe('mergeTwoLinkedLists()', () => {
   it('should merge two linked lists', () => {

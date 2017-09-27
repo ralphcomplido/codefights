@@ -24,7 +24,6 @@ function firstDuplicateUsingSet(a) {
   return -1;
 }
 
-
 module.exports = {
   firstDuplicate,
   firstDuplicateUsingSet
