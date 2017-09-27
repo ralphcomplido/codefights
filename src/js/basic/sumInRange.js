@@ -1,4 +1,4 @@
-function sumInRange(nums, queries) {
+const sumInRange = (nums, queries) => {
   let modulo = 1e9 + 7;
   let sums = [];
   sums.push(0);
@@ -17,7 +17,7 @@ function sumInRange(nums, queries) {
 
   if (sum < 0) return sum + modulo;
   return sum;
-}
+};
 
 module.exports = {
   sumInRange

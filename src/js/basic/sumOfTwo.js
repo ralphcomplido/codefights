@@ -1,4 +1,4 @@
-function sumOfTwo(a, b, v) {
+const sumOfTwo = (a, b, v) => {
   let set = new Set();
   for (let i = 0; i < a.length; i++) {
     set.add(a[i]);
@@ -9,7 +9,7 @@ function sumOfTwo(a, b, v) {
   }
 
   return false;
-}
+};
 
 module.exports = {
   sumOfTwo

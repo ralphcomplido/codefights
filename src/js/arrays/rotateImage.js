@@ -1,5 +1,5 @@
 /* O(nm) time, O(1) space */
-function rotateImage(a) {
+const rotateImage = a => {
   const n = a.length;
 
   for (let i = 0; i < n / 2; i++) {
@@ -13,10 +13,10 @@ function rotateImage(a) {
   }
 
   return a;
-}
+};
 
 /* O(nm) time, O(nm) space */
-function rotateImage2(a) {
+const rotateImage2 = a => {
   let res = [];
   let n = a.length;
 
@@ -31,7 +31,7 @@ function rotateImage2(a) {
   }
 
   return res;
-}
+};
 
 module.exports = {
   rotateImage,

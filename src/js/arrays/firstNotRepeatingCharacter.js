@@ -1,15 +1,15 @@
 /* O(n) time, O(1) space */
-function firstNotRepeatingCharacter(s) {
+const firstNotRepeatingCharacter = s => {
   for (let i = 0; i < s.length; i++) {
     let c = s.charAt(i);
     if (s.indexOf(c) === s.lastIndexOf(c)) return c;
   }
 
   return '_';
-}
+};
 
 /* O(n) time, O(n) space */
-function firstNotRepeatingCharacterUsingMap(s) {
+const firstNotRepeatingCharacterUsingMap = s => {
   const counts = new Map();
 
   for (let i = 0; i < s.length; i++) {
@@ -23,7 +23,7 @@ function firstNotRepeatingCharacterUsingMap(s) {
   }
 
   return '_';
-}
+};
 
 module.exports = {
   firstNotRepeatingCharacter,

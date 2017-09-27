@@ -1,4 +1,4 @@
-function containsDuplicates(a) {
+const containsDuplicates = a => {
   let set = new Set();
 
   for (let i = 0; i < a.length; i++) {
@@ -7,7 +7,7 @@ function containsDuplicates(a) {
   }
 
   return false;
-}
+};
 
 module.exports = {
   containsDuplicates

@@ -1,4 +1,4 @@
-function containsCloseNums(nums, k) {
+const containsCloseNums = (nums, k) => {
   let map = new Map();
 
   for (let i = 0; i < nums.length; i++) {
@@ -8,7 +8,7 @@ function containsCloseNums(nums, k) {
   }
 
   return false;
-}
+};
 
 module.exports = {
   containsCloseNums

@@ -3,7 +3,7 @@ function ListNode(x) {
   this.next = null;
 }
 
-function mergeTwoLinkedLists(l1, l2) {
+const mergeTwoLinkedLists = (l1, l2) => {
   let dummy = new ListNode();
   let cur = dummy;
 
@@ -27,7 +27,7 @@ function mergeTwoLinkedLists(l1, l2) {
   }
 
   return dummy.next;
-}
+};
 
 module.exports = {
   ListNode,

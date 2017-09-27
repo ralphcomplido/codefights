@@ -3,7 +3,7 @@ function ListNode(x) {
   this.next = null;
 }
 
-function addTwoHugeNumbers(a, b) {
+const addTwoHugeNumbers = (a, b) => {
   const s1 = [];
   const s2 = [];
 
@@ -40,7 +40,7 @@ function addTwoHugeNumbers(a, b) {
   }
 
   return dummy.next;
-}
+};
 
 module.exports = {
   ListNode,

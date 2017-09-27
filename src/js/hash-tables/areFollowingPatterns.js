@@ -1,4 +1,4 @@
-function areFollowingPatterns(strings, patterns) {
+const areFollowingPatterns = (strings, patterns) => {
   const strMap = new Map();
   const patMap = new Map();
 
@@ -15,7 +15,7 @@ function areFollowingPatterns(strings, patterns) {
   }
 
   return true;
-}
+};
 
 module.exports = {
   areFollowingPatterns

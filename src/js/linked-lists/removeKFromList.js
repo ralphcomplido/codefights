@@ -3,7 +3,7 @@ function ListNode(x) {
   this.next = null;
 }
 
-function removeKFromList(l, k) {
+const removeKFromList = (l, k) => {
   let dummy = new ListNode();
   dummy.next = l;
   let cur = dummy;
@@ -17,7 +17,7 @@ function removeKFromList(l, k) {
   }
 
   return dummy.next;
-}
+};
 
 module.exports = {
   ListNode,

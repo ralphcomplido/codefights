@@ -1,4 +1,4 @@
-function groupingDishes(dishes) {
+const groupingDishes = dishes => {
   let ingredientDishMap = {};
   for (let i = 0; i < dishes.length; i++) {
     let dish = dishes[i];
@@ -29,7 +29,7 @@ function groupingDishes(dishes) {
   });
 
   return res;
-}
+};
 
 module.exports = {
   groupingDishes
