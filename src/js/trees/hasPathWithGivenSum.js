@@ -5,12 +5,12 @@ function TreeNode(x) {
   this.right = null;
 }
 
-function hasPathWithGivenSum(t, s) {
+const hasPathWithGivenSum = (t, s) => {
   if (t === null) return s === 0;
   return hasPathSum(t, s);
-}
+};
 
-function hasPathSum(t, s) {
+const hasPathSum = (t, s) => {
   if (t === null) return false;
 
   // leaf node
@@ -20,7 +20,7 @@ function hasPathSum(t, s) {
 
   let dif = s - t.value;
   return hasPathSum(t.left, dif) || hasPathSum(t.right, dif);
-}
+};
 
 module.exports = {
   TreeNode,
