@@ -3,7 +3,7 @@ const containsCloseNums = (nums, k) => {
 
   for (let i = 0; i < nums.length; i++) {
     let n = nums[i];
-    if (map.has(n) && Math.abs(map.get(n) - i) <= k) return true;
+    if (map.has(n) && i - map.get(n) <= k) return true;
     map.set(n, i);
   }
 
